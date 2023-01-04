@@ -123,5 +123,6 @@ header{
     margin-right: 0.6em;
 }
 input[type="date"]:focus::before {
-    content: "" !important;
+    content: attr(placeholder) ": ";
+/*     content: "" !important; */
 }
