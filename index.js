@@ -65,7 +65,7 @@ function totale (){
 }
 
 function formattazioneOre (ore){
-    return ore.toFixed(2);
+    return ore.toFixed(2) + ' ore';
 }
 
 function list(){
