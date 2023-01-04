@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Film</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container-fluid" id="container">
+        <header>
+            <div class="row">
+                <div class="col-12" id="header">
+                    <div id="img">
+                        <h1 id="titolo">Lista Film</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="tot">
+                <div class="col-12" id="spesaTot">
+                    <h3>Durata totale in ore: <span id="durata">0.00</span></h3>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="row"> 
+                <div id="lista">
+                    <!-- Codice in arrivo da Javascript -->
+                </div>
+            </div>
+            <div id="contenitoreForm">
+                <form method="" name="modulo">
+                <div class="row"> 
+                    <div class="col-md-2"></div>
+                    <div class="col-6 col-xs-6 col-md-4">
+                            <input class="form-control m-1" type="text" placeholder="Titolo" id="inputTitolo" required autocomplete="off">
+                        </div>
+                        <div class="col-6 col-xs-6 col-md-4">
+                            <input class="form-control m-1" type="number" min="0.01" step="0.01" max="500" id="inputDurata" placeholder="Durata Film" required autocomplete="off">
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="row"> 
+                            <div class="col-md-2"></div>
+                            <div class="col-9 col-xs-9 col-md-6"><!--con min dico che i numeri devono partire da minimo o 0.01--><!--step 0.01 sale di 0.01 alla volta con le frecce della tastiera-->
+                            <input class="form-control m-1" type="date" placeholder="Data visione" id="inputData" required autocomplete="off">
+                            </div> 
+                        <div class="col-2 col-xs-2 col-md-2 m-1">
+                            <button class="form-control" id="aggiungi">➕</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
