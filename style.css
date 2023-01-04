@@ -117,3 +117,8 @@ header{
     row-gap:8px; //metterà i margini intorno
  }
  */
+ input[type="date"]:before {
+    color: rgb(82, 81, 81);
+    content: attr(placeholder) !important;
+    margin-right: 0.6em;
+  }
