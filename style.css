@@ -122,3 +122,7 @@ header{
     content: attr(placeholder) !important;
     margin-right: 0.6em;
   }
+
+#inputData{
+    height: 83%;
+}
